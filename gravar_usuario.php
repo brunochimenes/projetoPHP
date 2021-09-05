@@ -1,20 +1,12 @@
 <?php
-  require_once __DIR__ . "/conexao.php";
-
-  //var_dump($conexao);
-
-  //var_dump($_POST['name']);
-
+  require __DIR__ . "/restrictedArea/crud.php";
+  
   $name = $_POST['name'];
   $login = $_POST['login'];
   $password = $_POST['password'];
-
-  $sql = "INSERT INTO usuarios (name, login, password) VALUES ('$name', '$login', '$password')";
-
-  //echo $sql;
-
-  $result = mysqli_query($conexao, $sql) or die(mysqli_error($conexao));
-
-  if($result) {
-    echo "Cadastrado com sucesso!";
-  };
+  
+  if(Create("usuarios", $_POST) == 1){
+    echo "Cadastrado com sucesso";
+  }else {
+    echo "Erro ao cadastrar";
+  }
