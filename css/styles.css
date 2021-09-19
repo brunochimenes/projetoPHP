@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.resposta {
+  display: none;
+}
+
+.resposta p {
+  margin: 10px 0 0 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.resposta .error {
+  color: #ff0000;
+  border: 3px solid #ff0000;
+  background-color: #ffdfdf;
+  padding: 20px;
+}
+
+.resposta .success {
+  color: #00ff00;
+  border: 3px solid #00ff00;
+  background-color: #dfffdf;
+  padding: 20px;
+}
+
+.resposta .load {
+  color: #0000ff;
+  border: 3px solid #0000ff;
+  background-color: #dfdfff;
+}
+
+.resposta .load img {
+  float: left;
+  width: 18px;
+  margin-right: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, .8) url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2c110454-5b33-4416-bf9b-72992c7cb56f/d60eb1v-79212624-e842-4e55-8d58-4ac7514ca8e4.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjMTEwNDU0LTViMzMtNDQxNi1iZjliLTcyOTkyYzdjYjU2ZlwvZDYwZWIxdi03OTIxMjYyNC1lODQyLTRlNTUtOGQ1OC00YWM3NTE0Y2E4ZTQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.9LDpLmLlbA507H7fKa8aEDxFr8k3SlwCGC1zuJ13d1w') 50% 50% no-repeat;
+}
+
+body.loading .modal {
+  display: block;
+}
