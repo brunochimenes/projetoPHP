@@ -1,6 +1,5 @@
 <?php
-  sleep(1);
-  
+  sleep(1); 
   require __DIR__ . "/restrictedArea/crud.php";
   
   $name = $_POST['name'];

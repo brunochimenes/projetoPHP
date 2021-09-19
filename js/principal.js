@@ -14,7 +14,7 @@ $(document).ready(function () {
   var msg = $('.resposta');
 
   function carregando(mensagem = "Aguarde o envio da requisição") {
-    msg.empty().html('<p class="load"><img src="img/loading.gif" alt="Carregando..."/>' + mensagem + '</p>').fadeIn("fast");
+    msg.empty().html('<p class="load">' + mensagem + '</p>').fadeIn("fast");
   }
 
   function errosend() {

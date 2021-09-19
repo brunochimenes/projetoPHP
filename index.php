@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto PHP</title>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/principal.js"></script>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -22,12 +24,6 @@
     
     <div class="respostas"></div>
 
-    <br>
-    <br>
-
     <a href="cadastro_usuario.php">CADASTRAR</a>
-
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/principal.js"></script>
 </body>
 </html>
